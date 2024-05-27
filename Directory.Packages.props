@@ -7,7 +7,7 @@
     We actively negate this here, as we have some packages in tree we don't want such automatic behavior for.
     We use Directory.Build.props to get copy the state *after* our MSBuild config but before Nuget's config.
     -->
-    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+    <ManagePackageVersionsCentrally />
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="BenchmarkDotNet" Version="0.13.12" />
